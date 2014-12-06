@@ -41,7 +41,7 @@ y33 <- subElData$Sub_metering_3
 plot(xTime,y31,ylab="Energy sub metering",xlab="",type="l")
 lines(xTime,y32,col="red" )
 lines(xTime,y33,col="blue")
-legend("topright", legend=c("Submetering_1","Submetering_2","Submetering_3"),col=c("black","red","blue"),lty=1,bty="n")
+legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1,bty="n",cex=0.9)
 
 #####subplot4 Global reactive power by date
 y41 <- subElData$Global_reactive_power
