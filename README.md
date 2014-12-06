@@ -9,15 +9,15 @@ Please, see the pre-requisite section about the required file.
 
 ##Structure of this repository
 
-This repository has the same basic structure as the original repository. However, all the original demo plots were removed from the **figure** directory and substituted with my new plots. 
+This repository has the same basic structure as the master repository. There is a **figure** directory that contains the (original) example plots. 
 
 ##Deliverables
 
-Files with plots and files with R scripts are provided.
+Files with plots and files with R scripts in the **root** directory are provided.
 
 ###Plots
 
-There are four files in the **figure** directory that store my plots. The files are named as: 
+There are four files in the **root** directory that store my plots. The files are named as: 
 
 * plot1.png that contains a histogram that plots the "Global active power"
 
@@ -46,5 +46,5 @@ The following are the pre-requisites to run the scripts:
 ****
 
 Note: 
-There is an optional script called downLoad.R. It downloads and unzips the data. The expanded file is stored in the the working directory.
+There is an optional script called downLoad.R in the **root** directory. It downloads and unzips the data. The expanded file is stored in the the working directory.
     
