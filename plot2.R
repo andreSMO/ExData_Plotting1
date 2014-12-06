@@ -4,6 +4,8 @@
 #1-The file "household_power_consumption.txt" is available in the workking directory 
 #2-The packages "lubridate" and "dplyr" are installed.
 #
+#A white background is used to improve readability 
+#
 ##read the file
 filName <- "household_power_consumption.txt"
 classInfo <- c("character"   ,   "character" ,rep("numeric",1,7))
@@ -25,4 +27,5 @@ y <- subElData$Global_active_power
 png(filename="plot2.png",width=480,height=480)
 plot(x,y,ylab="Global Active Power(kilowatts)",xlab="",type="l")
 dev.off()
-rm("subElData")
+#Clear the workspace
+rm(list=ls())

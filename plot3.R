@@ -4,6 +4,8 @@
 #1-The file "household_power_consumption.txt" is available in the workking directory 
 #2-The packages "lubridate" and "dplyr" are installed.
 #
+#A white background is used to improve readability 
+#
 ##read the file
 filName <- "household_power_consumption.txt"
 classInfo <- c("character"   ,   "character" ,rep("numeric",1,7))
@@ -25,7 +27,7 @@ rm("elData")
 ###submetering 3 is displayed i blue
 
 ###Collect the submetering data
-x<- subElData$DateTime
+x <- subElData$DateTime
 y1 <- subElData$Sub_metering_1
 y2 <- subElData$Sub_metering_2
 y3 <- subElData$Sub_metering_3
@@ -36,4 +38,5 @@ lines(x,y2,col="red" )
 lines(x,y3,col="blue")
 legend("topright", legend=c("Submetering_1","Submetering_2","Submetering_3"),col=c("black","red","blue"),lty=1)
 dev.off()
-rm("subElData")
+#Clear the work space
+rm(list=ls())

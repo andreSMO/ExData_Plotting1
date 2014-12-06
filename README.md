@@ -46,5 +46,5 @@ The following are the pre-requisites to run the scripts:
 ****
 
 Note: 
-There is an optional script called downLoad.R in the **root** directory. It downloads and unzips the data. The expanded file is stored in the the working directory.
+There is an optional script called downLoad.R in the **root** directory. It downloads and unzips the data. The expanded file is stored in the the working directory. 
     

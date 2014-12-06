@@ -4,6 +4,8 @@
 #1-The file "household_power_consumption.txt" is available in the workking directory 
 #2-The packages "lubridate" and "dplyr" are installed.
 #
+#A white background is used to improve readability 
+#
 ##read the file
 filName <- "household_power_consumption.txt"
 classInfo <- c("character"   ,   "character" ,rep("numeric",1,7))
