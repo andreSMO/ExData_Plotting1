@@ -30,12 +30,12 @@ x <- subElData$DateTime
 y1 <- subElData$Sub_metering_1
 y2 <- subElData$Sub_metering_2
 y3 <- subElData$Sub_metering_3
-###Plot 
+###Plot in png using transparent background
 png(filename="plot3.png",width=480,height=480,bg="transparent",type="cairo-png")
 plot(x,y1,ylab="Energy sub metering",xlab="",type="l")
 lines(x,y2,col="red" )
 lines(x,y3,col="blue")
-legend("topright", legend=c("Submetering_1","Submetering_2","Submetering_3"),col=c("black","red","blue"),lty=1)
+legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1)
 dev.off()
 #Clear the work space
 rm(list=ls())
