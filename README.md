@@ -27,9 +27,11 @@ There are four files in the **root** directory that store my plots. The files ar
 
 * plot4.png that contains 4 xy-plots. Plot 1 shows the "global Active Power" versus date. Plot 2 shows the voltage versus date. Plot 3 shows the energy sub-metering(1-4) versus date. Plot 4 shows the global reactive power versus date.
 
+All plots are generated with transparent background in the same way as the examples in directory **figure**.
+
 ###R scripts
 
-There are four R-scripts named plot1.R, plot2.R, plot3.R, plot4.R in the **root** directory.  Each script generates a corresponding png plot. 
+There are four R-scripts named plot1.R, plot2.R, plot3.R, plot4.R in the **root** directory.  Each script generates a corresponding png plot using transparent background. 
 
 ####Basic pre-requisites to run the R-scripts
 

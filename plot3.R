@@ -1,10 +1,9 @@
 #Script to generate a plot about energy submettering
 #
 #The pre-requisites are:
-#1-The file "household_power_consumption.txt" is available in the workking directory 
-#2-The packages "lubridate" and "dplyr" are installed.
-#
-#A white background is used to improve readability 
+#1-The file "household_power_consumption.txt" is available in the working directory 
+#2-The packages "lubridate","dplyr" are installed.
+# 
 #
 ##read the file
 filName <- "household_power_consumption.txt"
@@ -21,7 +20,7 @@ subElData <- subset(elData, DateTime >= ymd_hms("2007-02-01 00:00:00") & DateTim
 ##remove the large file
 rm("elData")
 
-##Plot three energy submetering in png
+##Plot three energy submetering in png using transparent background
 ###submetering 1 is displayed in black
 ###submetering 2 is displayed in red
 ###submetering 3 is displayed i blue
@@ -31,8 +30,8 @@ x <- subElData$DateTime
 y1 <- subElData$Sub_metering_1
 y2 <- subElData$Sub_metering_2
 y3 <- subElData$Sub_metering_3
-###Plot
-png(filename="plot3.png",width=480,height=480)
+###Plot 
+png(filename="plot3.png",width=480,height=480,bg="transparent",type="cairo-png")
 plot(x,y1,ylab="Energy sub metering",xlab="",type="l")
 lines(x,y2,col="red" )
 lines(x,y3,col="blue")

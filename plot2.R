@@ -2,9 +2,8 @@
 #
 #The pre-requisites are:
 #1-The file "household_power_consumption.txt" is available in the workking directory 
-#2-The packages "lubridate" and "dplyr" are installed.
+#2-The packages "lubridate", "dplyr" are installed.
 #
-#A white background is used to improve readability 
 #
 ##read the file
 filName <- "household_power_consumption.txt"
@@ -21,10 +20,10 @@ subElData <- subset(elData, DateTime >= ymd_hms("2007-02-01 00:00:00") & DateTim
 ##remove the large file
 rm("elData")
 
-##Plot with global active power vs date in png file
-x<- subElData$DateTime
+##Plot with global active power versus date in png file with transparent background
+x <- subElData$DateTime
 y <- subElData$Global_active_power
-png(filename="plot2.png",width=480,height=480)
+png(filename="plot2.png",width=480,height=480,bg="transparent",type="cairo-png")
 plot(x,y,ylab="Global Active Power(kilowatts)",xlab="",type="l")
 dev.off()
 #Clear the workspace

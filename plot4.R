@@ -2,9 +2,7 @@
 #
 #The pre-requisites are:
 #1-The file "household_power_consumption.txt" is available in the workking directory 
-#2-The packages "lubridate" and "dplyr" are installed.
-#
-#A white background is used to improve readability 
+#2-The packages "lubridate","dplyr" are installed.
 #
 ##read the file
 filName <- "household_power_consumption.txt"
@@ -21,9 +19,9 @@ subElData <- subset(elData, DateTime >= ymd_hms("2007-02-01 00:00:00") & DateTim
 ##remove the large file
 rm("elData")
 
-##Plot a combination of four subplots in png
-png(filename="plot4.png",width=480,height=480) #open the display device
-par(mfrow=c(2,2))                              #display 2X2 plots by rows
+##Plot a combination of four subplots in png using transparent background
+png(filename="plot4.png",width=480,height=480,bg="transparent",type="cairo-png") 
+par(mfrow=c(2,2)) #display 2X2 plots by rows
 
 #####subplot1 draw global active power vs date
 xTime<- subElData$DateTime
